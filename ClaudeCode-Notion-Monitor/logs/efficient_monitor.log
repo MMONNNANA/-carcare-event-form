@@ -35566,3 +35566,554 @@
 2025-07-14 13:40:39,329 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
 2025-07-14 13:40:39,331 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
 2025-07-14 13:40:39,332 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:41:09,334 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:41:13,406 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:41:13,482 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:41:13,482 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:41:14,700 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:41:14,907 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:41:15,503 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:41:15,709 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:41:16,737 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:41:16,940 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:41:17,972 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:41:18,181 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.3% CPU
+2025-07-14 13:41:19,496 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:41:19,705 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:41:20,087 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:41:20,296 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:41:20,525 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:41:20,527 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:41:20,527 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:41:50,529 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:41:50,954 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:41:51,035 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:41:51,036 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:41:53,640 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:41:53,845 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:41:54,298 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:41:54,504 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:41:54,994 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:41:55,198 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:41:55,914 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:41:56,125 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.4% CPU
+2025-07-14 13:41:56,493 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:41:56,700 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:41:57,074 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:41:57,282 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:41:57,629 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:41:57,631 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:41:57,632 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:42:27,633 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:42:30,996 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:42:31,083 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:42:31,083 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:42:32,442 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:42:32,649 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.3% CPU
+2025-07-14 13:42:35,610 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:42:35,832 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:42:40,508 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:42:40,736 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:42:41,806 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:42:42,012 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:42:43,703 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:42:43,906 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:42:45,493 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:42:45,699 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:42:45,949 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:42:45,950 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:42:45,951 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:43:15,952 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:43:17,177 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:43:17,260 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:43:17,260 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:43:18,704 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:43:18,907 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:43:20,556 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:43:20,760 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:43:21,141 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:43:21,349 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:43:21,955 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:43:22,164 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.2% CPU
+2025-07-14 13:43:23,429 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:43:23,634 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:43:24,103 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:43:24,307 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:43:24,561 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:43:24,562 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:43:24,562 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:43:54,555 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:43:54,872 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:43:54,951 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:43:54,951 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:43:55,797 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:43:56,000 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:43:56,447 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:43:56,654 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:43:58,015 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:43:58,222 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:44:02,330 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:44:02,542 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.4% CPU
+2025-07-14 13:44:05,375 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:44:05,580 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:44:08,188 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:44:08,425 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:44:08,685 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:44:08,686 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:44:08,687 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:44:38,686 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:44:38,996 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:44:39,076 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:44:39,076 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:44:40,591 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:44:40,799 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:44:41,512 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:44:41,719 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:44:43,083 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:44:43,289 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:44:46,115 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:44:46,317 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.3% CPU
+2025-07-14 13:44:47,646 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:44:47,853 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:44:51,780 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:44:52,068 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:44:52,524 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:44:52,527 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:44:52,527 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:45:22,528 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:45:22,932 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:45:23,014 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:45:23,014 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:45:24,353 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:45:24,558 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:45:27,645 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:45:27,851 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:45:29,496 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:45:29,705 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:45:33,424 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:45:33,655 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.6% CPU
+2025-07-14 13:45:34,464 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:45:34,669 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:45:37,263 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:45:37,491 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:45:38,187 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:45:38,189 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:45:38,190 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:46:08,191 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:46:08,538 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:46:08,605 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:46:08,605 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:46:09,061 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:46:09,263 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:46:10,375 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:46:10,578 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:46:11,158 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:46:11,365 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:46:12,828 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:46:13,038 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.1% CPU
+2025-07-14 13:46:17,514 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:46:17,721 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:46:18,615 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:46:18,821 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:46:19,061 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:46:19,062 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:46:19,062 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:46:49,063 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:46:49,432 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:46:49,512 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:46:49,512 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:46:56,287 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:46:56,491 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:46:56,917 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:46:57,123 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:47:04,128 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:47:04,332 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:47:09,727 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:47:09,934 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:47:10,447 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:47:10,649 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:47:11,287 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:47:11,510 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:47:11,976 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:47:11,977 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:47:11,977 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:47:41,978 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:47:42,444 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:47:42,530 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:47:42,530 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:47:44,110 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:47:44,317 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:47:45,323 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:47:45,529 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:47:47,136 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:47:47,343 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:47:48,331 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:47:48,536 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:47:49,951 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:47:50,157 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:47:50,569 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:47:50,775 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:47:51,012 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:47:51,013 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:47:51,013 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:48:21,014 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:48:21,338 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:48:21,418 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:48:21,418 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:48:22,359 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:48:22,563 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:48:23,837 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:48:24,049 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:48:28,746 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:48:28,949 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:48:31,037 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:48:31,244 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.6% CPU
+2025-07-14 13:48:34,493 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:48:34,722 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:48:36,638 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:48:36,846 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:48:38,103 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:48:38,105 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:48:38,105 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:49:08,106 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:49:08,989 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:49:09,054 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:49:09,054 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:49:10,210 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:49:10,413 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:49:11,036 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:49:11,263 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:49:12,562 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:49:12,766 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:49:14,913 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:49:15,116 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.6% CPU
+2025-07-14 13:49:16,495 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:49:16,702 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:49:17,793 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:49:17,996 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:49:18,319 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:49:18,320 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:49:18,320 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:49:48,321 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:49:48,758 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:49:48,847 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:49:48,847 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:49:49,323 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:49:49,525 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:49:49,989 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:49:50,191 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:49:51,925 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:49:52,131 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:49:53,674 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:49:53,881 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.7% CPU
+2025-07-14 13:49:55,885 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:49:56,087 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:49:56,595 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:49:56,802 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:49:57,843 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:49:57,845 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:49:57,845 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:50:27,846 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:50:28,131 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:50:28,225 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:50:28,225 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:50:29,475 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:50:29,678 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:50:30,373 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:50:30,574 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:50:31,972 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:50:32,175 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:50:33,488 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:50:33,695 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.6% CPU
+2025-07-14 13:50:36,016 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:50:36,221 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:50:37,331 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:50:37,540 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:50:37,786 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:50:37,792 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:50:37,792 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:51:07,793 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:51:08,633 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:51:08,716 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:51:08,716 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:51:09,297 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:51:09,502 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:51:11,090 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:51:11,297 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:51:11,709 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:51:11,916 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:51:13,234 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:51:13,444 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.4% CPU
+2025-07-14 13:51:15,292 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:51:15,495 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:51:16,127 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:51:16,332 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:51:16,581 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:51:16,584 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:51:16,585 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:51:46,591 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:51:46,969 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:51:47,053 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:51:47,053 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:51:48,351 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:51:48,560 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:51:48,942 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:51:49,146 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:51:49,471 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:51:49,677 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:51:50,358 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:51:50,564 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.2% CPU
+2025-07-14 13:51:50,995 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:51:51,207 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:51:51,647 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:51:51,852 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:51:52,115 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:51:52,116 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:51:52,116 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:52:22,118 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:52:22,433 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:52:22,523 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:52:22,523 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:52:24,306 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:52:24,509 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:52:25,700 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:52:25,904 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:52:26,341 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:52:26,543 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:52:28,101 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:52:28,304 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.3% CPU
+2025-07-14 13:52:29,595 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:52:29,802 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:52:30,812 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:52:31,015 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:52:32,701 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:52:32,701 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:52:32,702 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:53:02,703 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:53:03,051 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:53:03,121 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:53:03,121 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:53:04,519 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:53:04,721 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.3% CPU
+2025-07-14 13:53:05,124 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:53:05,330 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:53:06,572 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:53:06,776 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:53:07,560 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:53:07,764 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.2% CPU
+2025-07-14 13:53:09,003 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:53:09,209 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:53:16,940 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:53:17,141 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:53:17,654 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:53:17,655 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:53:17,656 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:53:47,657 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:53:47,958 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:53:48,047 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:53:48,047 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:53:48,845 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:53:49,056 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:53:49,425 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:53:49,629 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:53:50,015 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:53:50,224 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:53:50,663 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:53:50,873 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:53:54,612 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:53:54,860 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:53:57,009 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:53:57,211 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:53:57,466 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:53:57,466 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:53:57,467 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:54:27,468 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:54:27,756 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:54:27,842 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:54:27,842 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:54:31,597 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:54:31,805 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:54:33,097 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:54:33,301 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:54:35,559 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:54:35,842 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:54:36,547 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:54:36,754 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.7% CPU
+2025-07-14 13:54:37,940 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:54:38,143 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:54:39,805 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:54:40,009 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:54:41,575 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:54:41,576 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:54:41,576 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:55:11,578 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:55:12,035 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:55:12,105 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:55:12,105 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:55:13,630 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:55:13,838 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:55:14,292 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:55:14,497 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:55:14,888 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:55:15,098 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:55:16,383 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:55:16,588 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:55:17,977 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:55:18,184 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:55:21,370 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:55:21,576 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:55:21,834 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:55:21,836 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:55:21,837 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:55:51,838 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:55:52,162 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:55:52,222 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:55:52,223 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:55:53,261 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:55:53,469 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:55:55,911 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:55:56,117 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:55:56,564 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:55:56,768 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:55:59,795 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:56:00,015 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.2% CPU
+2025-07-14 13:56:00,431 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:56:00,636 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:56:02,036 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:56:02,242 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:56:02,518 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:56:02,521 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:56:02,522 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:56:32,523 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:56:33,273 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:56:33,353 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:56:33,353 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:56:36,212 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:56:36,420 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:56:38,418 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:56:38,624 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:56:39,267 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:56:39,477 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:56:40,415 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:56:40,617 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.6% CPU
+2025-07-14 13:56:41,947 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:56:42,151 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:56:43,270 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:56:43,476 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:56:44,506 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:56:44,508 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:56:44,509 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:57:14,510 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:57:14,979 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:57:15,044 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:57:15,044 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:57:19,962 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:57:20,324 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:57:22,292 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:57:22,500 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:57:27,015 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:57:27,222 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:57:28,393 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:57:28,599 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.4% CPU
+2025-07-14 13:57:29,659 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:57:29,869 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:57:31,035 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:57:31,241 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:57:31,519 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:57:31,521 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:57:31,521 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:58:01,523 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:58:01,844 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:58:01,918 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:58:01,918 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:58:02,928 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:58:03,132 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:58:03,628 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:58:03,834 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:58:05,725 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:58:05,927 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:58:10,313 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:58:10,646 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.2% CPU
+2025-07-14 13:58:11,806 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:58:12,012 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:58:13,192 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:58:13,393 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:58:13,637 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:58:13,639 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:58:13,639 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:58:43,640 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:58:43,998 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:58:44,077 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:58:44,077 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:58:44,540 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:58:44,749 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:58:45,239 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:58:45,441 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:58:45,887 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:58:46,090 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:58:46,748 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:58:46,950 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.1% CPU
+2025-07-14 13:58:47,267 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:58:47,476 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:58:47,865 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:58:48,070 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:58:48,866 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:58:48,868 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:58:48,868 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:58:53,870 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:58:55,540 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:58:55,616 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:58:55,616 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:58:56,055 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:58:56,263 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 1.6% CPU
+2025-07-14 13:58:56,647 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:58:56,852 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:58:57,244 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:58:57,449 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:58:57,901 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:58:58,105 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.5% CPU
+2025-07-14 13:58:58,467 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:58:58,671 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:58:59,029 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:58:59,230 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:58:59,953 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:58:59,954 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:58:59,954 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 13:59:29,955 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 13:59:30,290 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 13:59:30,371 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 13:59:30,371 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 13:59:31,367 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 13:59:31,574 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 13:59:33,282 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 13:59:33,495 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 13:59:33,896 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 13:59:34,103 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 13:59:34,849 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 13:59:35,069 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.9% CPU
+2025-07-14 13:59:37,868 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 13:59:38,074 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 13:59:39,438 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 13:59:39,643 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 13:59:39,900 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 13:59:39,901 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 13:59:39,902 - INFO - ✅ 배치 업데이트 완료: 6/7개
+2025-07-14 14:00:09,903 - INFO - 🎛️ 프로세스 제어 시작...
+2025-07-14 14:00:10,260 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-14 14:00:10,332 - INFO - 🎛️ 프로세스 제어 완료
+2025-07-14 14:00:10,332 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-14 14:00:10,892 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-14 14:00:11,098 - INFO - 🟢 📊 Automation Monitor: 0.17% RAM, 0.4% CPU
+2025-07-14 14:00:12,106 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-14 14:00:12,312 - INFO - 🟢 📷 Screenshot: 0.03% RAM, 0.0% CPU
+2025-07-14 14:00:13,120 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-14 14:00:13,326 - INFO - 🟢 🌐 FTP Server: 0.05% RAM, 0.0% CPU
+2025-07-14 14:00:14,416 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-14 14:00:14,624 - INFO - 🟢 🧠 BRAIN Daemon: 0.04% RAM, 0.1% CPU
+2025-07-14 14:00:15,741 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-8357-f89006451238 "HTTP/1.1 200 OK"
+2025-07-14 14:00:15,948 - INFO - 🟢 🧠 Background Memory: 0.04% RAM, 0.0% CPU
+2025-07-14 14:00:17,039 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-816c-8779-ef05b77c82ea "HTTP/1.1 200 OK"
+2025-07-14 14:00:17,245 - INFO - 🟢 🧠 Realtime Memory: 0.02% RAM, 0.0% CPU
+2025-07-14 14:00:18,378 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8102-857b-c90225d21dd2 "HTTP/1.1 400 Bad Request"
+2025-07-14 14:00:18,380 - ERROR - ❌ 업데이트 실패 🧠 Thinking Triggers: Can't edit block that is archived. You must unarchive the block before editing.
+2025-07-14 14:00:18,381 - INFO - ✅ 배치 업데이트 완료: 6/7개

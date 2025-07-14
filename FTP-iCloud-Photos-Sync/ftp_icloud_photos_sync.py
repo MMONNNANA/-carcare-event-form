@@ -113,37 +113,77 @@ class FTPiCloudPhotoSync:
             self.logger.error(f"❌ 중복 체크 실패: {e}")
             return False
 
-    def _add_batch_to_photos_app(self, file_paths: List[Path]) -> int:
-        """Photos 앱에 배치로 파일 추가 - 1번의 요청으로 여러 파일"""
+    def _close_photos_error_dialogs(self):
+        """Photos 앱 오류 다이얼로그 자동 닫기"""
         try:
-            # 파일 경로들을 AppleScript 리스트로 변환
-            file_list = ", ".join([f'POSIX file "{fp}"' for fp in file_paths])
-            
-            self.logger.info(f"📤 {len(file_paths)}개 파일을 1번의 요청으로 업로드...")
-            
-            applescript = f'''
-            tell application "Photos"
-                import {{{file_list}}} skip check duplicates yes
+            applescript = '''
+            tell application "System Events"
+                tell process "Photos"
+                    repeat with theWindow in windows
+                        try
+                            if exists button "확인" of theWindow then
+                                click button "확인" of theWindow
+                            end if
+                        end try
+                    end repeat
+                end tell
             end tell
             '''
-            
-            result = subprocess.run(
-                ['osascript', '-e', applescript],
-                capture_output=True,
-                text=True,
-                timeout=300  # 5분 대기
-            )
-            
-            if result.returncode == 0:
-                self.logger.info(f"✅ Photos 앱 배치 추가 완료: {len(file_paths)}개 파일")
-                return len(file_paths)
-            else:
-                self.logger.error(f"❌ Photos 앱 배치 추가 실패: {result.stderr}")
-                return 0
+            subprocess.run(['osascript', '-e', applescript], capture_output=True, timeout=5)
+        except:
+            pass
+
+    def _add_batch_to_photos_app(self, file_paths: List[Path]) -> int:
+        """Photos 앱에 배치로 파일 추가 - 오류 처리 강화"""
+        max_retries = 2
+        
+        for retry in range(max_retries):
+            try:
+                # 오류창 닫기
+                self._close_photos_error_dialogs()
                 
-        except Exception as e:
-            self.logger.error(f"❌ Photos 앱 배치 추가 오류: {e}")
-            return 0
+                # 파일 경로들을 AppleScript 리스트로 변환
+                file_list = ", ".join([f'POSIX file "{fp}"' for fp in file_paths])
+                
+                if retry == 0:
+                    self.logger.info(f"📤 {len(file_paths)}개 파일을 1번의 요청으로 업로드...")
+                else:
+                    self.logger.info(f"🔄 재시도 {retry}/{max_retries-1}: {len(file_paths)}개 파일 업로드...")
+                
+                applescript = f'''
+                tell application "Photos"
+                    import {{{file_list}}} skip check duplicates yes
+                end tell
+                '''
+                
+                result = subprocess.run(
+                    ['osascript', '-e', applescript],
+                    capture_output=True,
+                    text=True,
+                    timeout=60  # 1분으로 단축
+                )
+                
+                # 업로드 후 오류창 체크 및 닫기
+                import time
+                time.sleep(1)
+                self._close_photos_error_dialogs()
+                
+                if result.returncode == 0:
+                    self.logger.info(f"✅ Photos 앱 배치 추가 완료: {len(file_paths)}개 파일")
+                    return len(file_paths)
+                else:
+                    self.logger.warning(f"⚠️ 시도 {retry+1} 실패: {result.stderr}")
+                    if retry < max_retries - 1:
+                        time.sleep(2)  # 재시도 전 대기
+                        
+            except Exception as e:
+                self.logger.warning(f"⚠️ 시도 {retry+1} 오류: {e}")
+                if retry < max_retries - 1:
+                    import time
+                    time.sleep(2)
+        
+        self.logger.error(f"❌ 모든 재시도 실패: {[f.name for f in file_paths]}")
+        return 0
 
     def _trigger_icloud_sync(self) -> bool:
         """iCloud Photos 동기화 강제 실행"""
