@@ -1,0 +1,30 @@
+2025-07-13 15:27:32,251 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-13 15:27:32,660 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:27:33,214 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:27:33,216 - INFO - 🔴 📊 Automation Monitor: 0.00% RAM, 0.0% CPU
+2025-07-13 15:27:33,489 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:27:33,817 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:27:33,820 - INFO - 🟢 📷 Screenshot: 0.05% RAM, 0.0% CPU
+2025-07-13 15:27:34,130 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:27:34,670 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:27:34,672 - INFO - 🟢 🌐 FTP Server: 0.09% RAM, 0.0% CPU
+2025-07-13 15:27:34,989 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:27:35,642 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:27:35,645 - INFO - 🟢 🧠 BRAIN Daemon: 0.10% RAM, 0.4% CPU
+2025-07-13 15:27:37,204 - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:27:39,370 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81b8-9517-e79f426be322 "HTTP/1.1 200 OK"
+2025-07-13 15:27:39,371 - INFO - 🟢 🧠 Memory System: 0.04% RAM, 0.0% CPU
+2025-07-13 15:27:39,371 - INFO - ✅ 배치 업데이트 완료: 5/5개
+2025-07-13 15:29:01,314 - INFO - 💾 캐시 로드됨: 5개 페이지
+2025-07-13 15:29:01,314 - INFO - 🔄 효율적 상태 업데이트 시작...
+2025-07-13 15:29:02,025 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:29:02,027 - INFO - 🟢 📊 Automation Monitor: 0.10% RAM, 0.0% CPU
+2025-07-13 15:29:02,696 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:29:02,699 - INFO - 🟢 📷 Screenshot: 0.05% RAM, 0.0% CPU
+2025-07-13 15:29:03,263 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:29:03,264 - INFO - 🟢 🌐 FTP Server: 0.09% RAM, 0.0% CPU
+2025-07-13 15:29:04,273 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:29:04,280 - INFO - 🟢 🧠 BRAIN Daemon: 0.10% RAM, 0.5% CPU
+2025-07-13 15:29:04,945 - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81b8-9517-e79f426be322 "HTTP/1.1 200 OK"
+2025-07-13 15:29:04,946 - INFO - 🟢 🧠 Memory System: 0.04% RAM, 0.0% CPU
+2025-07-13 15:29:04,946 - INFO - ✅ 배치 업데이트 완료: 5/5개

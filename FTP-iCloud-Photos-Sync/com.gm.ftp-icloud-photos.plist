@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gm.ftp-icloud-photos</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Volumes/990 PRO 2TB/GM/01_Projects/FTP-iCloud-Photos-Sync/ftp_icloud_photos_sync.py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Volumes/990 PRO 2TB/GM/logs/ftp_icloud_photos.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Volumes/990 PRO 2TB/GM/logs/ftp_icloud_photos_error.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Volumes/990 PRO 2TB/GM/01_Projects/FTP-iCloud-Photos-Sync</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>

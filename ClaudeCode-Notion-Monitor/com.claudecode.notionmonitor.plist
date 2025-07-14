@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.claudecode.notionmonitor</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Volumes/990 PRO 2TB/GM/01_Projects/ClaudeCode-Notion-Monitor/start_monitoring.sh</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>/Volumes/990 PRO 2TB/GM/01_Projects/ClaudeCode-Notion-Monitor</string>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>StandardOutPath</key>
+    <string>/Volumes/990 PRO 2TB/GM/01_Projects/ClaudeCode-Notion-Monitor/logs/startup.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Volumes/990 PRO 2TB/GM/01_Projects/ClaudeCode-Notion-Monitor/logs/startup.error.log</string>
+    
+    <key>StartInterval</key>
+    <integer>30</integer>
+    
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <key>Nice</key>
+    <integer>10</integer>
+</dict>
+</plist>

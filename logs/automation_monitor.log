@@ -1,0 +1,302 @@
+2025-07-13 14:47:35,924 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:47:35,957 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:47:36,211 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 404 Not Found"
+2025-07-13 14:47:36,213 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 📷 Screenshot Monitor: Could not find database with ID: 22fea5e4-a832-8085-b6af-d11739c68578. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 14:47:36,780 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 404 Not Found"
+2025-07-13 14:47:36,786 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🌐 FTP Server: Could not find database with ID: 22fea5e4-a832-8085-b6af-d11739c68578. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 14:47:36,965 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 404 Not Found"
+2025-07-13 14:47:36,967 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Could not find database with ID: 22fea5e4-a832-8085-b6af-d11739c68578. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 14:47:38,754 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 404 Not Found"
+2025-07-13 14:47:38,756 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Could not find database with ID: 22fea5e4-a832-8085-b6af-d11739c68578. Make sure the relevant pages and databases are shared with your integration.
+2025-07-13 14:47:38,756 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:47:38,757 - __main__ - INFO -   📊 📷 Screenshot Monitor | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:47:38,757 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:47:38,757 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:47:38,757 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:48:20,586 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:48:20,621 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:48:22,266 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:48:22,267 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 📷 Screenshot Monitor: Process Name is not a property that exists. Status is not a property that exists. Type is not a property that exists. PID is not a property that exists. CPU Usage is not a property that exists. Memory MB is not a property that exists. Last Check is not a property that exists. Start Time is not a property that exists. Uptime Hours is not a property that exists. Command is not a property that exists. Working Dir is not a property that exists. Auto Restart is not a property that exists. Priority is not a property that exists. Health Score is not a property that exists.
+2025-07-13 14:48:22,460 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:48:22,461 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🌐 FTP Server: Process Name is not a property that exists. Status is not a property that exists. Type is not a property that exists. PID is not a property that exists. CPU Usage is not a property that exists. Memory MB is not a property that exists. Last Check is not a property that exists. Start Time is not a property that exists. Uptime Hours is not a property that exists. Command is not a property that exists. Working Dir is not a property that exists. Auto Restart is not a property that exists. Priority is not a property that exists. Health Score is not a property that exists.
+2025-07-13 14:48:22,669 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:48:22,670 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Process Name is not a property that exists. Status is not a property that exists. Type is not a property that exists. PID is not a property that exists. CPU Usage is not a property that exists. Memory MB is not a property that exists. Last Check is not a property that exists. Start Time is not a property that exists. Uptime Hours is not a property that exists. Command is not a property that exists. Working Dir is not a property that exists. Auto Restart is not a property that exists. Priority is not a property that exists. Health Score is not a property that exists.
+2025-07-13 14:48:22,868 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:48:22,871 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Process Name is not a property that exists. Status is not a property that exists. Type is not a property that exists. PID is not a property that exists. CPU Usage is not a property that exists. Memory MB is not a property that exists. Last Check is not a property that exists. Start Time is not a property that exists. Uptime Hours is not a property that exists. Command is not a property that exists. Working Dir is not a property that exists. Auto Restart is not a property that exists. Priority is not a property that exists. Health Score is not a property that exists.
+2025-07-13 14:48:22,871 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:48:22,871 - __main__ - INFO -   📊 📷 Screenshot Monitor | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:48:22,871 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:48:22,872 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:48:22,872 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:49:05,674 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:49:05,705 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:49:05,997 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:49:05,998 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 📷 Screenshot Monitor: Process Name is not a property that exists.
+2025-07-13 14:49:06,190 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:49:06,194 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🌐 FTP Server: Process Name is not a property that exists.
+2025-07-13 14:49:06,377 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:49:06,377 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Process Name is not a property that exists.
+2025-07-13 14:49:06,889 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:49:06,892 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Conversation Daemon: Process Name is not a property that exists.
+2025-07-13 14:49:06,892 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:49:06,892 - __main__ - INFO -   📊 📷 Screenshot Monitor | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:49:06,892 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:49:06,892 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:49:06,892 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:49:31,416 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:49:31,447 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:49:31,889 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:49:31,891 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot Monitor (PID: 26070)
+2025-07-13 14:49:32,358 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:49:32,358 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:49:33,655 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:49:33,656 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Conversation Daemon (PID: 75171)
+2025-07-13 14:49:33,985 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:49:33,986 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Conversation Daemon (PID: 77944)
+2025-07-13 14:49:33,986 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:49:33,986 - __main__ - INFO -   📊 📷 Screenshot Monitor | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:49:33,986 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:49:33,986 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:49:33,986 - __main__ - INFO -   📊 🧠 BRAIN Conversation Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:50:59,973 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:51:00,004 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:51:00,505 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:51:00,506 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot (PID: 26070)
+2025-07-13 14:51:00,916 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:51:00,918 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:51:01,858 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:51:01,858 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 75171)
+2025-07-13 14:51:02,201 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:51:02,205 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 77944)
+2025-07-13 14:51:02,205 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:51:02,205 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:51:02,205 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:51:02,205 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:51:02,205 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:52:43,735 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:52:43,768 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:52:44,298 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:52:44,299 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot (PID: 26070)
+2025-07-13 14:52:44,671 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:52:44,677 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:52:45,044 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:52:45,045 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 75171)
+2025-07-13 14:52:45,481 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:52:45,498 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 77944)
+2025-07-13 14:52:45,499 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:52:45,499 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:52:45,499 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:52:45,500 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:52:45,500 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:55:07,349 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:55:07,382 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:55:07,835 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:55:07,836 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot (PID: 26070)
+2025-07-13 14:55:08,172 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:55:08,173 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:55:11,487 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:55:11,488 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 75171)
+2025-07-13 14:55:12,084 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:55:12,086 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 77944)
+2025-07-13 14:55:12,087 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:55:12,087 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 14.9MB
+2025-07-13 14:55:12,087 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:55:12,087 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:55:12,087 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:56:31,470 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:56:31,502 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:56:31,958 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:56:31,960 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot (PID: 26070)
+2025-07-13 14:56:32,468 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:56:32,469 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:56:33,888 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:56:33,889 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 75171)
+2025-07-13 14:56:34,218 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:56:34,220 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 77944)
+2025-07-13 14:56:34,220 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:56:34,220 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 14:56:34,220 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:56:34,221 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:56:34,221 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 14:59:13,128 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 14:59:13,160 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 14:59:15,640 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:59:15,645 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot (PID: 26070)
+2025-07-13 14:59:16,052 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:59:16,057 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server (PID: 45936)
+2025-07-13 14:59:16,457 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:59:16,459 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 75171)
+2025-07-13 14:59:16,917 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:59:16,918 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon (PID: 77944)
+2025-07-13 14:59:16,918 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 14:59:16,918 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 14:59:16,918 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 14:59:16,918 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 15.2MB
+2025-07-13 14:59:16,918 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 77944 | CPU: 0.0% | RAM: 16.8MB
+2025-07-13 15:00:20,617 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:00:20,648 - __main__ - INFO - 📊 3개 자동화 프로세스 발견
+2025-07-13 15:00:24,445 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:00:24,448 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot
+2025-07-13 15:00:24,827 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:00:24,829 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server
+2025-07-13 15:00:25,296 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:00:25,298 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon
+2025-07-13 15:00:25,298 - __main__ - INFO - ✅ 3개 프로세스 모니터링 완료
+2025-07-13 15:00:25,299 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:00:25,299 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:00:25,299 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:04:28,653 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:04:28,685 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 15:04:29,215 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:04:29,216 - __main__ - INFO - ✅ 새 프로세스 등록: 📊 Automation Monitor
+2025-07-13 15:04:30,001 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:04:30,002 - __main__ - INFO - ✅ 새 프로세스 등록: 📷 Screenshot
+2025-07-13 15:04:30,458 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:04:30,460 - __main__ - INFO - ✅ 새 프로세스 등록: 🌐 FTP Server
+2025-07-13 15:04:30,833 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:04:30,835 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 BRAIN Daemon
+2025-07-13 15:04:30,835 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 15:04:30,835 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 16069 | CPU: 0.0% | RAM: 31.599999999999998MB
+2025-07-13 15:04:30,835 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:04:30,836 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:04:30,836 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:05:29,468 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:05:29,500 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 15:05:31,384 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:05:34,017 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:05:34,018 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:05:34,239 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:05:34,551 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:05:34,553 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:05:34,766 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:05:35,224 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:05:35,225 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:05:35,445 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:05:35,769 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:05:35,773 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:05:35,773 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 15:05:35,773 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 16426 | CPU: 0.0% | RAM: 31.099999999999998MB
+2025-07-13 15:05:35,773 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:05:35,773 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:05:35,773 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:07:34,237 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:07:34,270 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 15:07:34,975 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:07:35,814 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:07:35,817 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:07:36,050 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:07:36,581 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:07:36,583 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:07:36,834 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:07:37,285 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:07:37,287 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:07:38,267 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:07:38,870 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:07:38,872 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:07:38,873 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 15:07:38,873 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 17179 | CPU: 0.0% | RAM: 32.1MB
+2025-07-13 15:07:38,873 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:07:38,873 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:07:38,873 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:14:00,726 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:14:00,758 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 15:14:01,961 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:14:03,192 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:14:03,194 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:14:03,773 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:14:04,253 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:14:04,254 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:14:07,161 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:14:08,471 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:14:08,472 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:14:08,690 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:14:09,021 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:14:09,025 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:14:09,025 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 15:14:09,025 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 19351 | CPU: 0.0% | RAM: 31.4MB
+2025-07-13 15:14:09,025 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:14:09,025 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:14:09,025 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:16:08,741 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:16:08,773 - __main__ - INFO - 📊 4개 자동화 프로세스 발견
+2025-07-13 15:16:09,356 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:16:09,854 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:16:09,856 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:16:12,228 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:16:13,271 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:16:13,272 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:16:13,537 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:16:14,848 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:16:14,848 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:16:15,077 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:16:15,624 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:16:15,628 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:16:15,629 - __main__ - INFO - ✅ 4개 프로세스 모니터링 완료
+2025-07-13 15:16:15,629 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 19896 | CPU: 0.0% | RAM: 31.3MB
+2025-07-13 15:16:15,630 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:16:15,630 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:16:15,630 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:23:13,722 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:23:13,754 - __main__ - INFO - 📊 5개 자동화 프로세스 발견
+2025-07-13 15:23:14,143 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:23:14,544 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 15:23:14,545 - __main__ - INFO - ✅ 새 프로세스 등록: 🧠 Memory System
+2025-07-13 15:23:14,782 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:23:16,380 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:23:16,381 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:23:16,607 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:23:19,830 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:23:19,837 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:23:20,440 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:23:21,221 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:23:21,223 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:23:21,457 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:23:21,966 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:23:21,967 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:23:21,967 - __main__ - INFO - ✅ 5개 프로세스 모니터링 완료
+2025-07-13 15:23:21,967 - __main__ - INFO -   📊 🧠 Memory System | PID: 21395 | CPU: 0.0% | RAM: 14.2MB
+2025-07-13 15:23:21,967 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 22284 | CPU: 0.0% | RAM: 31.3MB
+2025-07-13 15:23:21,968 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:23:21,968 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:23:21,968 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:24:55,341 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:24:55,373 - __main__ - INFO - 📊 5개 자동화 프로세스 발견
+2025-07-13 15:24:55,374 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 Memory System: local variable 'existing_page_id' referenced before assignment
+2025-07-13 15:24:55,374 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 📊 Automation Monitor: local variable 'existing_page_id' referenced before assignment
+2025-07-13 15:24:55,374 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 📷 Screenshot: local variable 'existing_page_id' referenced before assignment
+2025-07-13 15:24:55,374 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🌐 FTP Server: local variable 'existing_page_id' referenced before assignment
+2025-07-13 15:24:55,374 - __main__ - ERROR - ❌ 프로세스 업데이트 실패 🧠 BRAIN Daemon: local variable 'existing_page_id' referenced before assignment
+2025-07-13 15:24:55,374 - __main__ - INFO - ✅ 5개 프로세스 모니터링 완료
+2025-07-13 15:24:55,374 - __main__ - INFO -   📊 🧠 Memory System | PID: 21395 | CPU: 0.0% | RAM: 14.3MB
+2025-07-13 15:24:55,374 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 22862 | CPU: 0.0% | RAM: 31.1MB
+2025-07-13 15:24:55,374 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:24:55,374 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:24:55,374 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB
+2025-07-13 15:25:17,499 - __main__ - INFO - 🔍 자동화 프로세스 스캔 시작...
+2025-07-13 15:25:17,530 - __main__ - INFO - 📊 5개 자동화 프로세스 발견
+2025-07-13 15:25:17,859 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:25:18,129 - httpx - INFO - HTTP Request: GET https://api.notion.com/v1/pages/22fea5e4-a832-81b8-9517-e79f426be322 "HTTP/1.1 200 OK"
+2025-07-13 15:25:20,057 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81b8-9517-e79f426be322 "HTTP/1.1 200 OK"
+2025-07-13 15:25:20,057 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 Memory System
+2025-07-13 15:25:20,279 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:25:20,504 - httpx - INFO - HTTP Request: GET https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:25:22,158 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-817a-9f2a-ffc99512c47e "HTTP/1.1 200 OK"
+2025-07-13 15:25:22,160 - __main__ - INFO - 📝 프로세스 업데이트: 📊 Automation Monitor
+2025-07-13 15:25:22,391 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:25:22,667 - httpx - INFO - HTTP Request: GET https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:25:23,382 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-814e-be3a-ce0f0f7b7fd2 "HTTP/1.1 200 OK"
+2025-07-13 15:25:23,384 - __main__ - INFO - 📝 프로세스 업데이트: 📷 Screenshot
+2025-07-13 15:25:23,640 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:25:24,566 - httpx - INFO - HTTP Request: GET https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:25:26,346 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-81f3-a444-c10f32f19711 "HTTP/1.1 200 OK"
+2025-07-13 15:25:26,349 - __main__ - INFO - 📝 프로세스 업데이트: 🌐 FTP Server
+2025-07-13 15:25:26,712 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/databases/22fea5e4a832801b8332e3ea05cf28fa/query "HTTP/1.1 200 OK"
+2025-07-13 15:25:26,924 - httpx - INFO - HTTP Request: GET https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:25:29,231 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-8181-bbf3-c62c5f076f6e "HTTP/1.1 200 OK"
+2025-07-13 15:25:29,234 - __main__ - INFO - 📝 프로세스 업데이트: 🧠 BRAIN Daemon
+2025-07-13 15:25:29,234 - __main__ - INFO - ✅ 5개 프로세스 모니터링 완료
+2025-07-13 15:25:29,234 - __main__ - INFO -   📊 🧠 Memory System | PID: 21395 | CPU: 0.0% | RAM: 14.3MB
+2025-07-13 15:25:29,234 - __main__ - INFO -   📊 📊 Automation Monitor | PID: 22877 | CPU: 0.0% | RAM: 31.8MB
+2025-07-13 15:25:29,234 - __main__ - INFO -   📊 📷 Screenshot | PID: 26070 | CPU: 0.0% | RAM: 15.0MB
+2025-07-13 15:25:29,234 - __main__ - INFO -   📊 🌐 FTP Server | PID: 45936 | CPU: 0.0% | RAM: 29.6MB
+2025-07-13 15:25:29,234 - __main__ - INFO -   📊 🧠 BRAIN Daemon | PID: 75171 | CPU: 0.0% | RAM: 32.0MB

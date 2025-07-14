@@ -1,0 +1,8 @@
+2025-07-13 14:38:17,498 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:38:17,500 - src.notion_client - ERROR - Failed to create session entry: Session ID is not a property that exists. Start Time is not a property that exists. Duration is not a property that exists. Commands Count is not a property that exists. Status is not a property that exists. Model is not a property that exists. Workspace is not a property that exists.
+2025-07-13 14:39:52,684 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 400 Bad Request"
+2025-07-13 14:39:52,685 - src.notion_client - ERROR - Failed to create session entry: Name is not a property that exists.
+2025-07-13 14:40:15,230 - httpx - INFO - HTTP Request: POST https://api.notion.com/v1/pages "HTTP/1.1 200 OK"
+2025-07-13 14:40:15,231 - src.notion_client - INFO - Session entry created: 22fea5e4-a832-810b-8499-f5a7b3c51573
+2025-07-13 14:40:16,316 - httpx - INFO - HTTP Request: PATCH https://api.notion.com/v1/pages/22fea5e4-a832-810b-8499-f5a7b3c51573 "HTTP/1.1 200 OK"
+2025-07-13 14:40:16,319 - src.notion_client - INFO - Session updated: 22fea5e4-a832-810b-8499-f5a7b3c51573
