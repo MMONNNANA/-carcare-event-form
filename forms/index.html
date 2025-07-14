@@ -440,34 +440,45 @@
             `;
             document.body.appendChild(statusDiv);
 
-            // 서버 상태 확인
+            // 서버 상태 확인 - CORS 대응
             fetch('http://172.30.1.34:8081', {
                 method: 'OPTIONS',
-                timeout: 5000
+                mode: 'cors'
             })
             .then(response => {
-                if (response.ok) {
-                    // 서버가 정상 작동 중
-                    statusDiv.remove();
-                } else {
-                    throw new Error('Server not responding');
-                }
+                // 서버가 정상 작동 중
+                statusDiv.remove();
             })
             .catch(error => {
-                // 서버가 죽어있음
-                statusDiv.innerHTML = `
-                    <div style="text-align: center; padding: 40px; background: #d32f2f; border-radius: 10px;">
-                        <div>❌ 서버가 응답하지 않습니다</div>
-                        <div style="margin-top: 15px; font-size: 14px;">
-                            Form Input Receiver가 실행되지 않고 있습니다.<br>
-                            시스템 관리자에게 문의하세요.
+                // CORS 오류 또는 서버 다운 - 간단한 POST 테스트로 재확인
+                fetch('http://172.30.1.34:8081', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ test: 'server_check' })
+                })
+                .then(response => {
+                    if (response.ok) {
+                        statusDiv.remove();
+                    } else {
+                        throw new Error('Server error');
+                    }
+                })
+                .catch(finalError => {
+                    // 서버가 완전히 죽어있음
+                    statusDiv.innerHTML = `
+                        <div style="text-align: center; padding: 40px; background: #d32f2f; border-radius: 10px;">
+                            <div>❌ 서버가 응답하지 않습니다</div>
+                            <div style="margin-top: 15px; font-size: 14px;">
+                                Form Input Receiver가 실행되지 않고 있습니다.<br>
+                                시스템 관리자에게 문의하세요.
+                            </div>
+                            <button onclick="location.reload()" style="
+                                margin-top: 20px; padding: 10px 20px; background: #fff;
+                                color: #d32f2f; border: none; border-radius: 5px; cursor: pointer;
+                            ">🔄 다시 시도</button>
                         </div>
-                        <button onclick="location.reload()" style="
-                            margin-top: 20px; padding: 10px 20px; background: #fff;
-                            color: #d32f2f; border: none; border-radius: 5px; cursor: pointer;
-                        ">🔄 다시 시도</button>
-                    </div>
-                `;
+                    `;
+                });
             });
         }
 
