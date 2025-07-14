@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여름 한정 이벤트 홍보물 제작을 위한 정보 수집</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: "📋";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .submit-section {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 여름 한정 이벤트 홍보물 제작</h1>
+            <p>최고의 홍보 효과를 위한 정보 수집 폼입니다</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="note">
+                <strong>📌 안내사항:</strong> 정확한 홍보물 제작을 위해 아래 정보들을 상세히 작성해 주세요. 
+                필수항목(<span class="required">*</span>)은 반드시 입력해 주시기 바랍니다.
+            </div>
+            
+            <form id="eventForm">
+                <!-- 이벤트 일정 -->
+                <div class="section">
+                    <h3 class="section-title">이벤트 일정 관련</h3>
+                    
+                    <div class="form-group">
+                        <label for="startDate">이벤트 시작일 <span class="required">*</span></label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="endDate">이벤트 종료일 <span class="required">*</span></label>
+                        <input type="date" id="endDate" name="endDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="operatingHours">운영시간 <span class="required">*</span></label>
+                        <input type="text" id="operatingHours" name="operatingHours" 
+                               placeholder="예: 평일 09:00-18:00, 주말 09:00-17:00" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="closedDays">휴무일</label>
+                        <input type="text" id="closedDays" name="closedDays" 
+                               placeholder="예: 매주 일요일, 7월 25일">
+                    </div>
+                </div>
+
+                <!-- 이벤트 1 정보 -->
+                <div class="section">
+                    <h3 class="section-title">이벤트 1: 프리미엄 패키지 (50만원)</h3>
+                    
+                    <div class="form-group">
+                        <label for="event1_normal_price">정상가격 (광택+유리막+유리발수) <span class="required">*</span></label>
+                        <input type="text" id="event1_normal_price" name="event1_normal_price" 
+                               placeholder="예: 70만원" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event1_discount_rate">할인율</label>
+                        <input type="text" id="event1_discount_rate" name="event1_discount_rate" 
+                               placeholder="예: 약 28% 할인">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event1_details">서비스 상세내용</label>
+                        <textarea id="event1_details" name="event1_details" 
+                                  placeholder="광택, 유리막, 유리발수 각각의 세부 설명이나 브랜드 정보"></textarea>
+                    </div>
+                </div>
+
+                <!-- 이벤트 2 정보 -->
+                <div class="section">
+                    <h3 class="section-title">이벤트 2: 유리발수 할인 (15만원)</h3>
+                    
+                    <div class="form-group">
+                        <label for="wash_basic_price">기본세차 가격 <span class="required">*</span></label>
+                        <input type="text" id="wash_basic_price" name="wash_basic_price" 
+                               placeholder="예: 3만원" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wash_premium_price">프리미엄세차 가격</label>
+                        <input type="text" id="wash_premium_price" name="wash_premium_price" 
+                               placeholder="예: 5만원">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wash_options">기타 세차 옵션</label>
+                        <textarea id="wash_options" name="wash_options" 
+                                  placeholder="다른 세차 옵션이 있다면 가격과 함께 적어주세요"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="coating_only_price">유리발수 단독 가격 확인 <span class="required">*</span></label>
+                        <select id="coating_only_price" name="coating_only_price" required>
+                            <option value="">선택해주세요</option>
+                            <option value="25만원">25만원 (정상가 그대로)</option>
+                            <option value="불가능">세차 없이는 불가능</option>
+                            <option value="기타">기타 (아래 상세 설명란에 작성)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 예약 및 운영 방식 -->
+                <div class="section">
+                    <h3 class="section-title">예약 및 운영 방식</h3>
+                    
+                    <div class="form-group">
+                        <label>예약 방법 <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="phone_reservation" name="reservation_methods" value="전화예약">
+                                <label for="phone_reservation">전화예약</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="online_reservation" name="reservation_methods" value="온라인예약">
+                                <label for="online_reservation">온라인예약</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="walk_in" name="reservation_methods" value="당일방문">
+                                <label for="walk_in">당일방문 가능</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="daily_limit">일일 처리 가능 대수</label>
+                        <input type="text" id="daily_limit" name="daily_limit" 
+                               placeholder="예: 하루 최대 5대">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service_time">평균 작업 소요시간</label>
+                        <input type="text" id="service_time" name="service_time" 
+                               placeholder="예: 이벤트1 3시간, 이벤트2 2시간">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment_methods">결제 방법 및 할인</label>
+                        <textarea id="payment_methods" name="payment_methods" 
+                                  placeholder="현금/카드 할인 차이, 기타 결제 조건"></textarea>
+                    </div>
+                </div>
+
+                <!-- 고객 구분 및 제한사항 -->
+                <div class="section">
+                    <h3 class="section-title">고객 구분 및 제한사항</h3>
+                    
+                    <div class="form-group">
+                        <label for="customer_classification">신규/기존 고객 구분 혜택</label>
+                        <textarea id="customer_classification" name="customer_classification" 
+                                  placeholder="신규 고객 추가 할인이나 기존 고객 혜택이 있다면 적어주세요"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle_restrictions">차종 제한사항</label>
+                        <textarea id="vehicle_restrictions" name="vehicle_restrictions" 
+                                  placeholder="대형차, 수입차, 특정 차종 제한이나 추가 요금이 있다면 적어주세요"></textarea>
+                    </div>
+                </div>
+
+                <!-- 매장 정보 및 연락처 -->
+                <div class="section">
+                    <h3 class="section-title">매장 정보 및 연락처</h3>
+                    
+                    <div class="form-group">
+                        <label for="shop_name">매장명 <span class="required">*</span></label>
+                        <input type="text" id="shop_name" name="shop_name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone_number">전화번호 <span class="required">*</span></label>
+                        <input type="tel" id="phone_number" name="phone_number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">주소 <span class="required">*</span></label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="kakao_contact">카카오톡 채널/ID</label>
+                        <input type="text" id="kakao_contact" name="kakao_contact">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="other_contact">기타 연락처 (인스타그램, 네이버 등)</label>
+                        <textarea id="other_contact" name="other_contact"></textarea>
+                    </div>
+                </div>
+
+                <!-- 홍보 및 디자인 -->
+                <div class="section">
+                    <h3 class="section-title">홍보 및 디자인 관련</h3>
+                    
+                    <div class="form-group">
+                        <label>주요 홍보 채널 <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="instagram" name="promotion_channels" value="인스타그램">
+                                <label for="instagram">인스타그램</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="facebook" name="promotion_channels" value="페이스북">
+                                <label for="facebook">페이스북</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="naver" name="promotion_channels" value="네이버">
+                                <label for="naver">네이버</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="kakao" name="promotion_channels" value="카카오톡">
+                                <label for="kakao">카카오톡</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offline" name="promotion_channels" value="오프라인">
+                                <label for="offline">오프라인 전단지</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="brand_colors">선호 브랜드 컬러</label>
+                        <input type="text" id="brand_colors" name="brand_colors" 
+                               placeholder="예: 파란색, #3498db, 기존 로고 컬러 사용">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="design_style">선호하는 디자인 스타일</label>
+                        <textarea id="design_style" name="design_style" 
+                                  placeholder="모던한 느낌, 친근한 느낌, 고급스러운 느낌 등 원하시는 스타일"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="existing_materials">기존 홍보물이나 로고 파일</label>
+                        <textarea id="existing_materials" name="existing_materials" 
+                                  placeholder="기존에 사용하시는 로고나 홍보물이 있다면 어떻게 전달해주실지 적어주세요"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="photo_usage">매장/작업 사진 사용 가능 여부</label>
+                        <select id="photo_usage" name="photo_usage">
+                            <option value="">선택해주세요</option>
+                            <option value="가능">사용 가능 (직접 제공)</option>
+                            <option value="촬영필요">사용하고 싶지만 촬영 필요</option>
+                            <option value="불가능">사용 불가 (일러스트나 일반 이미지 사용)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 기타 요청사항 -->
+                <div class="section">
+                    <h3 class="section-title">기타 요청사항</h3>
+                    
+                    <div class="form-group">
+                        <label for="special_emphasis">특별히 강조하고 싶은 내용</label>
+                        <textarea id="special_emphasis" name="special_emphasis" 
+                                  placeholder="고객에게 꼭 어필하고 싶은 포인트가 있다면 적어주세요"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional_requests">추가 요청사항</label>
+                        <textarea id="additional_requests" name="additional_requests" 
+                                  placeholder="기타 궁금한 점이나 특별한 요청사항이 있다면 자유롭게 적어주세요"></textarea>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button type="submit" class="submit-btn">📤 정보 제출하기</button>
+                    <p style="margin-top: 15px; color: #666; font-size: 14px;">
+                        제출 후 24시간 내에 홍보물 시안을 제작해드립니다!
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('eventForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 폼 데이터 수집
+            const formData = new FormData(this);
+            const data = {};
+            
+            // 체크박스 그룹 처리
+            const reservationMethods = [];
+            const promotionChannels = [];
+            
+            for (let [key, value] of formData.entries()) {
+                if (key === 'reservation_methods') {
+                    reservationMethods.push(value);
+                } else if (key === 'promotion_channels') {
+                    promotionChannels.push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            data.reservation_methods = reservationMethods;
+            data.promotion_channels = promotionChannels;
+            
+            // 데이터를 텍스트로 정리
+            let result = "=== 여름 한정 이벤트 홍보물 제작 정보 ===\n\n";
+            
+            result += "📅 이벤트 일정\n";
+            result += `• 시작일: ${data.startDate}\n`;
+            result += `• 종료일: ${data.endDate}\n`;
+            result += `• 운영시간: ${data.operatingHours}\n`;
+            result += `• 휴무일: ${data.closedDays || '없음'}\n\n`;
+            
+            result += "💰 이벤트 1 (프리미엄 패키지)\n";
+            result += `• 정상가격: ${data.event1_normal_price}\n`;
+            result += `• 할인율: ${data.event1_discount_rate || '미기재'}\n`;
+            result += `• 서비스 상세: ${data.event1_details || '미기재'}\n\n`;
+            
+            result += "💧 이벤트 2 (유리발수 할인)\n";
+            result += `• 기본세차: ${data.wash_basic_price}\n`;
+            result += `• 프리미엄세차: ${data.wash_premium_price || '미기재'}\n`;
+            result += `• 기타 세차 옵션: ${data.wash_options || '없음'}\n`;
+            result += `• 유리발수 단독: ${data.coating_only_price}\n\n`;
+            
+            result += "📞 예약 및 운영\n";
+            result += `• 예약방법: ${data.reservation_methods.join(', ')}\n`;
+            result += `• 일일 한정: ${data.daily_limit || '미기재'}\n`;
+            result += `• 소요시간: ${data.service_time || '미기재'}\n`;
+            result += `• 결제방법: ${data.payment_methods || '미기재'}\n\n`;
+            
+            result += "🏪 매장 정보\n";
+            result += `• 매장명: ${data.shop_name}\n`;
+            result += `• 전화번호: ${data.phone_number}\n`;
+            result += `• 주소: ${data.address}\n`;
+            result += `• 카카오톡: ${data.kakao_contact || '미기재'}\n\n`;
+            
+            result += "📱 홍보 채널\n";
+            result += `• 주요 채널: ${data.promotion_channels.join(', ')}\n`;
+            result += `• 브랜드 컬러: ${data.brand_colors || '미기재'}\n`;
+            result += `• 디자인 스타일: ${data.design_style || '미기재'}\n`;
+            result += `• 사진 사용: ${data.photo_usage || '미선택'}\n\n`;
+            
+            if (data.special_emphasis) {
+                result += `🎯 특별 강조사항\n${data.special_emphasis}\n\n`;
+            }
+            
+            if (data.additional_requests) {
+                result += `📝 추가 요청사항\n${data.additional_requests}\n\n`;
+            }
+            
+            // JSON 파일 자동 다운로드
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-').split('T')[0] + '_' + new Date().toISOString().replace(/[:.]/g, '-').split('T')[1].substring(0,8);
+            const jsonData = {
+                timestamp: new Date().toISOString(),
+                formData: data,
+                textSummary: result
+            };
+            
+            // JSON 파일 다운로드
+            const jsonBlob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+            const jsonUrl = URL.createObjectURL(jsonBlob);
+            const jsonLink = document.createElement('a');
+            jsonLink.href = jsonUrl;
+            jsonLink.download = `카케어_이벤트_정보_${timestamp}.json`;
+            jsonLink.click();
+            
+            // 텍스트 파일도 다운로드
+            const textBlob = new Blob([result], { type: 'text/plain;charset=utf-8' });
+            const textUrl = URL.createObjectURL(textBlob);
+            const textLink = document.createElement('a');
+            textLink.href = textUrl;
+            textLink.download = `카케어_이벤트_정보_${timestamp}.txt`;
+            textLink.click();
+            
+            // 결과를 새 창에서도 보여주기
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>이벤트 정보 수집 결과</title>
+                    <style>
+                        body { font-family: 'Malgun Gothic', sans-serif; padding: 20px; line-height: 1.6; }
+                        pre { background: #f5f5f5; padding: 20px; border-radius: 5px; white-space: pre-wrap; }
+                        .copy-btn { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 5px; }
+                        .download-section { background: #e8f5e8; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+                        .ftp-info { background: #fff3cd; padding: 15px; border-radius: 8px; margin-top: 20px; }
+                    </style>
+                </head>
+                <body>
+                    <div class="download-section">
+                        <h2>📥 다운로드 완료!</h2>
+                        <p>JSON 파일과 텍스트 파일이 자동으로 다운로드되었습니다.</p>
+                        <p><strong>다음 단계:</strong> 다운로드된 파일을 FTP 서버에 업로드해주세요.</p>
+                    </div>
+                    
+                    <div class="ftp-info">
+                        <h3>📂 FTP 업로드 안내</h3>
+                        <p><strong>서버 주소:</strong> ftp://172.30.1.34:5820</p>
+                        <p><strong>업로드 위치:</strong> /form_submissions/ 폴더 (없다면 생성)</p>
+                        <p>파일을 FTP 클라이언트로 업로드하거나, Finder에서 직접 복사하세요.</p>
+                    </div>
+                    
+                    <h2>📋 수집된 정보</h2>
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.querySelector('pre').textContent)">📋 복사하기</button>
+                    <button class="copy-btn" onclick="window.print()">🖨️ 인쇄하기</button>
+                    <pre>${result}</pre>
+                </body>
+                </html>
+            `);
+            
+            alert('✅ 파일이 자동으로 다운로드되었습니다!\\n\\n📂 다운로드된 파일:\\n• JSON 파일 (데이터용)\\n• 텍스트 파일 (읽기용)\\n\\n💡 이 파일들을 FTP 서버에 업로드하면 완료됩니다!');
+        });
+    </script>
+</body>
+</html>
