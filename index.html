@@ -194,12 +194,12 @@
                     
                     <div class="form-group">
                         <label for="startDate">이벤트 시작일 <span class="required">*</span></label>
-                        <input type="text" id="startDate" name="startDate" placeholder="예: 2025년 7월 20일" required>
+                        <input type="date" id="startDate" name="startDate" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="endDate">이벤트 종료일 <span class="required">*</span></label>
-                        <input type="text" id="endDate" name="endDate" placeholder="예: 2025년 8월 3일" required>
+                        <input type="date" id="endDate" name="endDate" required>
                     </div>
                     
                     <div class="form-group">
@@ -342,12 +342,20 @@
                                 <label for="instagram">인스타그램</label>
                             </div>
                             <div class="checkbox-item">
+                                <input type="checkbox" id="facebook" name="promotion_channels" value="페이스북">
+                                <label for="facebook">페이스북</label>
+                            </div>
+                            <div class="checkbox-item">
                                 <input type="checkbox" id="naver" name="promotion_channels" value="네이버">
                                 <label for="naver">네이버</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="blog" name="promotion_channels" value="블로그">
-                                <label for="blog">블로그</label>
+                                <input type="checkbox" id="kakao" name="promotion_channels" value="카카오톡">
+                                <label for="kakao">카카오톡</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offline" name="promotion_channels" value="오프라인">
+                                <label for="offline">오프라인 전단지</label>
                             </div>
                         </div>
                     </div>
@@ -370,6 +378,15 @@
                                   placeholder="기존에 사용하시는 로고나 홍보물이 있다면 어떻게 전달해주실지 적어주세요"></textarea>
                     </div>
                     
+                    <div class="form-group">
+                        <label for="photo_usage">매장/작업 사진 사용 가능 여부</label>
+                        <select id="photo_usage" name="photo_usage">
+                            <option value="">선택해주세요</option>
+                            <option value="가능">사용 가능 (직접 제공)</option>
+                            <option value="촬영필요">사용하고 싶지만 촬영 필요</option>
+                            <option value="불가능">사용 불가 (일러스트나 일반 이미지 사용)</option>
+                        </select>
+                    </div>
                 </div>
 
                 <!-- 기타 요청사항 -->
@@ -391,88 +408,18 @@
 
                 <div class="submit-section">
                     <button type="submit" class="submit-btn">📤 정보 제출하기</button>
+                    <p style="margin-top: 15px; color: #666; font-size: 14px;">
+                        제출 후 24시간 내에 홍보물 시안을 제작해드립니다!
+                    </p>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- EmailJS 라이브러리 -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("UR_xGjEBrzqb__raG"); // EmailJS 공개 키
-        })();
-    </script>
-
     <script>
-        // 서버 상태 확인 및 폼 제어
-        let serverStatus = false;
-        
-        // 페이지 로드 시 서버 상태 확인
-        async function checkServerStatus() {
-            try {
-                const response = await fetch('http://172.30.1.34:8081', {
-                    method: 'GET',
-                    timeout: 3000
-                });
-                return response.ok;
-            } catch (error) {
-                return false;
-            }
-        }
-        
-        // 폼 비활성화 화면 표시
-        function showMaintenanceScreen() {
-            const container = document.querySelector('.container');
-            container.innerHTML = `
-                <div class="header">
-                    <h1>🔧 시스템 점검 중</h1>
-                    <p>현재 카케어 이벤트 신청 시스템이 점검 중입니다</p>
-                </div>
-                <div class="form-container" style="text-align: center; padding: 60px 40px;">
-                    <div style="font-size: 80px; margin-bottom: 30px;">⚠️</div>
-                    <h2 style="color: #e74c3c; margin-bottom: 20px;">서비스 일시 중단</h2>
-                    <p style="font-size: 18px; color: #7f8c8d; margin-bottom: 30px; line-height: 1.6;">
-                        시스템 안정성을 위해 현재 신청 접수를 일시 중단했습니다.<br>
-                        잠시 후 다시 방문해 주시기 바랍니다.
-                    </p>
-                    
-                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px 0;">
-                        <h3 style="color: #2c3e50; margin-bottom: 15px;">📞 긴급 문의</h3>
-                        <p style="font-size: 20px; font-weight: bold; color: #27ae60;">010-5820-0144</p>
-                        <p style="color: #7f8c8d; margin-top: 10px;">스튜디오지엠</p>
-                    </div>
-                    
-                    
-                </div>
-            `;
-        }
-        
-        // 폼 정상 활성화
-        function showNormalForm() {
-            // 폼이 이미 정상 상태라면 이벤트 리스너만 추가
-            document.getElementById('eventForm').addEventListener('submit', handleFormSubmit);
-        }
-        
-        // 페이지 로드 시 서버 상태 확인
-        window.addEventListener('load', async function() {
-            console.log('🔍 서버 상태 확인 중...');
-            
-            const isServerUp = await checkServerStatus();
-            
-            if (isServerUp) {
-                console.log('✅ 서버 정상 - 폼 활성화');
-                serverStatus = true;
-                showNormalForm();
-            } else {
-                console.log('🔴 서버 다운 - 점검 화면 표시');
-                serverStatus = false;
-                showMaintenanceScreen();
-            }
-        });
-        
-        // 폼 제출 처리 함수
-        function handleFormSubmit(e) {
+        // 서버 상태 확인 제거 - 항상 폼 표시
+
+        document.getElementById('eventForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             // 폼 데이터 수집
@@ -527,7 +474,7 @@
             result += `• 주요 채널: ${data.promotion_channels.join(', ')}\n`;
             result += `• 브랜드 컬러: ${data.brand_colors || '미기재'}\n`;
             result += `• 디자인 스타일: ${data.design_style || '미기재'}\n`;
-            result += `\n`;
+            result += `• 사진 사용: ${data.photo_usage || '미선택'}\n\n`;
             
             if (data.special_emphasis) {
                 result += `🎯 특별 강조사항\n${data.special_emphasis}\n\n`;
@@ -537,105 +484,110 @@
                 result += `📝 추가 요청사항\n${data.additional_requests}\n\n`;
             }
             
-            // 이메일 백업 발송 함수
-            const sendEmailBackup = async (formData) => {
-                try {
-                    const emailData = {
-                        name: data.shop_name || '카케어 고객',
-                        phone: data.phone_number || '연락처 미기재',
-                        message: result,
-                        timestamp: new Date().toLocaleString('ko-KR')
-                    };
-                    
-                    await emailjs.send('service_w0y41hm', 'template_91l7bfa', emailData);
-                    console.log('📧 이메일 백업 발송 성공!');
-                    return true;
-                } catch (error) {
-                    console.log('📧 이메일 백업 실패:', error);
-                    return false;
-                }
-            };
-
-            // SMS 서버로 전송 (서버에서 SMS + 이메일 처리)
-            const sendData = async () => {
-                try {
-                    const response = await fetch('http://172.30.1.34:8081', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(data)
-                    });
-                    
-                    const result = await response.json();
-                    console.log('📊 서버 처리 결과:', result);
-                    
-                    if (result.success) {
-                        console.log('✅ SMS 발송 성공!');
-                        if (result.email_result && result.email_result.success) {
-                            console.log('📧 이메일 발송 성공!');
-                        } else {
-                            console.log('📧 이메일 발송 실패');
-                        }
-                    } else {
-                        console.log('❌ 처리 실패:', result);
-                    }
-                } catch (error) {
-                    console.log('🔌 서버 연결 실패:', error);
-                }
+            // JSON 파일 자동 다운로드
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-').split('T')[0] + '_' + new Date().toISOString().replace(/[:.]/g, '-').split('T')[1].substring(0,8);
+            const jsonData = {
+                timestamp: new Date().toISOString(),
+                formData: data,
+                textSummary: result
             };
             
-            // 데이터 전송 실행
-            sendData();
+            // JSON 파일 다운로드
+            const jsonBlob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+            const jsonUrl = URL.createObjectURL(jsonBlob);
+            const jsonLink = document.createElement('a');
+            jsonLink.href = jsonUrl;
+            jsonLink.download = `카케어_이벤트_정보_${timestamp}.json`;
+            jsonLink.click();
             
-            // 제출 완료 메시지 표시
-            const successMessage = `
-                <div style="
-                    position: fixed; 
-                    top: 0; left: 0; 
-                    width: 100%; height: 100%; 
-                    background: rgba(0,0,0,0.8); 
-                    display: flex; 
-                    align-items: center; 
-                    justify-content: center;
-                    z-index: 10000;
-                ">
-                    <div style="
-                        background: white; 
-                        padding: 40px; 
-                        border-radius: 15px; 
-                        text-align: center; 
-                        max-width: 90%;
-                        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-                    ">
-                        <div style="font-size: 60px; margin-bottom: 20px;">✅</div>
-                        <h2 style="color: #4CAF50; margin-bottom: 15px;">제출 완료!</h2>
-                        <p style="font-size: 16px; color: #666; margin-bottom: 25px;">
-                            정보가 성공적으로 전송되었습니다.<br>
-                            곧 연락드리겠습니다.
-                        </p>
-                        <button onclick="location.reload()" style="
-                            background: #4CAF50; 
-                            color: white; 
-                            border: none; 
-                            padding: 12px 30px; 
-                            border-radius: 25px; 
-                            font-size: 16px; 
-                            cursor: pointer;
-                        ">확인</button>
+            // 텍스트 파일도 다운로드
+            const textBlob = new Blob([result], { type: 'text/plain;charset=utf-8' });
+            const textUrl = URL.createObjectURL(textBlob);
+            const textLink = document.createElement('a');
+            textLink.href = textUrl;
+            textLink.download = `카케어_이벤트_정보_${timestamp}.txt`;
+            textLink.click();
+            
+            // SMS 자동화 서버로 데이터 전송
+            try {
+                fetch('http://172.30.1.34:8081', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                }).then(response => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.json();
+                })
+                .then(result => {
+                    console.log('✅ SMS 자동화 서버 응답:', result);
+                    // 성공 메시지 추가 표시
+                    const successMsg = document.createElement('div');
+                    successMsg.style.cssText = `
+                        position: fixed; top: 20px; right: 20px; z-index: 10000;
+                        background: #4CAF50; color: white; padding: 15px 20px;
+                        border-radius: 8px; font-size: 14px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    `;
+                    successMsg.innerHTML = '📱 SMS 및 이메일 발송 완료!';
+                    document.body.appendChild(successMsg);
+                    setTimeout(() => successMsg.remove(), 5000);
+                })
+                .catch(error => {
+                    console.log('⚠️ SMS 서버 연결 실패:', error);
+                    // 에러 메시지 표시
+                    const errorMsg = document.createElement('div');
+                    errorMsg.style.cssText = `
+                        position: fixed; top: 20px; right: 20px; z-index: 10000;
+                        background: #f44336; color: white; padding: 15px 20px;
+                        border-radius: 8px; font-size: 14px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    `;
+                    errorMsg.innerHTML = '⚠️ SMS 발송 실패 (파일 다운로드는 완료)';
+                    document.body.appendChild(errorMsg);
+                    setTimeout(() => errorMsg.remove(), 8000);
+                });
+            } catch (error) {
+                console.log('SMS 서버 전송 오류:', error);
+            }
+            
+            // 결과를 새 창에서도 보여주기
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>이벤트 정보 수집 결과</title>
+                    <style>
+                        body { font-family: 'Malgun Gothic', sans-serif; padding: 20px; line-height: 1.6; }
+                        pre { background: #f5f5f5; padding: 20px; border-radius: 5px; white-space: pre-wrap; }
+                        .copy-btn { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 5px; }
+                        .download-section { background: #e8f5e8; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+                        .ftp-info { background: #fff3cd; padding: 15px; border-radius: 8px; margin-top: 20px; }
+                    </style>
+                </head>
+                <body>
+                    <div class="download-section">
+                        <h2>📥 다운로드 완료!</h2>
+                        <p>JSON 파일과 텍스트 파일이 자동으로 다운로드되었습니다.</p>
+                        <p><strong>다음 단계:</strong> 다운로드된 파일을 FTP 서버에 업로드해주세요.</p>
                     </div>
-                </div>
-            `;
+                    
+                    <div class="ftp-info">
+                        <h3>📂 로컬 저장 안내</h3>
+                        <p><strong>저장 위치:</strong> /Volumes/990 PRO 2TB/GM/01_Projects/forms/form_submissions/</p>
+                        <p><strong>자동 처리:</strong> 파일이 다운로드되면 SMS 자동화 시스템이 감지하여 처리합니다.</p>
+                        <p>다운로드된 파일을 위 폴더로 수동 이동하거나, 자동 업로드 기능을 사용하세요.</p>
+                    </div>
+                    
+                    <h2>📋 수집된 정보</h2>
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText(document.querySelector('pre').textContent)">📋 복사하기</button>
+                    <button class="copy-btn" onclick="window.print()">🖨️ 인쇄하기</button>
+                    <pre>${result}</pre>
+                </body>
+                </html>
+            `);
             
-            // 성공 메시지 표시
-            document.body.insertAdjacentHTML('beforeend', successMessage);
-            
-            // 콘솔에 데이터 저장 (개발자가 확인용)
-            console.log('=== 제출된 정보 ===');
-            console.log(result);
-            console.log('=== JSON 데이터 ===');
-            console.log(JSON.stringify(data, null, 2));
-        }
+            alert('✅ 파일이 자동으로 다운로드되었습니다!\\n\\n📂 다운로드된 파일:\\n• JSON 파일 (데이터용)\\n• 텍스트 파일 (읽기용)\\n\\n💡 이 파일들을 FTP 서버에 업로드하면 완료됩니다!');
+        });
     </script>
 </body>
 </html>
