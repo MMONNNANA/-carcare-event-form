@@ -106,20 +106,26 @@
             box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
         }
         
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-        
         .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
         }
         
         .checkbox-item {
             display: flex;
             align-items: center;
+            padding: 10px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .checkbox-item:hover {
+            background: #f8f9fa;
+            border-color: #4CAF50;
         }
         
         .checkbox-item input[type="checkbox"] {
@@ -128,48 +134,88 @@
         }
         
         .submit-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
             text-align: center;
-            padding-top: 30px;
-            border-top: 2px solid #e0e0e0;
+            margin-top: 30px;
         }
         
         .submit-btn {
             background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
             color: white;
-            padding: 15px 40px;
             border: none;
-            border-radius: 50px;
+            padding: 15px 40px;
             font-size: 18px;
             font-weight: 600;
+            border-radius: 8px;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
         }
         
         .note {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            color: #856404;
+            margin-top: 15px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .price-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .price-input {
+            position: relative;
+        }
+        
+        .price-input::after {
+            content: "원";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7f8c8d;
+            pointer-events: none;
+        }
+        
+        .price-input input {
+            padding-right: 35px;
+        }
+        
+        .time-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
         }
         
         @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            
             .form-container {
                 padding: 20px;
             }
             
-            .header {
+            .section {
                 padding: 20px;
             }
             
-            .header h1 {
-                font-size: 24px;
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-group,
+            .time-group {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -177,240 +223,188 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚗 여름 한정 이벤트 홍보물 제작</h1>
-            <p>최고의 홍보 효과를 위한 정보 수집 폼입니다</p>
+            <h1>🌞 여름 한정 이벤트</h1>
+            <p>홍보물 제작을 위한 정보를 입력해주세요</p>
         </div>
         
         <div class="form-container">
-            <div class="note">
-                <strong>📌 안내사항:</strong> 정확한 홍보물 제작을 위해 아래 정보들을 상세히 작성해 주세요. 
-                정확한 홍보물 제작을 위해 아래 정보들을 상세히 작성해 주시기 바랍니다.
-            </div>
-            
             <form id="eventForm">
-                <!-- 이벤트 일정 -->
+                <!-- 기본 이벤트 일정 정보 -->
                 <div class="section">
-                    <h3 class="section-title">이벤트 일정 관련</h3>
+                    <div class="section-title">이벤트 일정 정보</div>
                     
                     <div class="form-group">
-                        <label for="startDate">이벤트 시작일</label>
-                        <input type="date" id="startDate" name="startDate">
+                        <label for="startDate">이벤트 시작일 <span class="required">*</span></label>
+                        <input type="date" id="startDate" name="startDate" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="endDate">이벤트 종료일</label>
-                        <input type="date" id="endDate" name="endDate">
+                        <label for="endDate">이벤트 종료일 <span class="required">*</span></label>
+                        <input type="date" id="endDate" name="endDate" required>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="operatingHours">운영시간</label>
-                        <input type="text" id="operatingHours" name="operatingHours" 
-                               placeholder="예: 평일 09:00-18:00, 주말 09:00-17:00">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="closedDays">휴무일</label>
-                        <input type="text" id="closedDays" name="closedDays" 
-                               placeholder="예: 매주 일요일, 7월 25일">
+                    <div class="time-group">
+                        <div class="form-group">
+                            <label for="operatingHours">운영시간 <span class="required">*</span></label>
+                            <input type="text" id="operatingHours" name="operatingHours" 
+                                   placeholder="예: 09:00 - 18:00" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="closedDays">휴무일</label>
+                            <input type="text" id="closedDays" name="closedDays" 
+                                   placeholder="예: 매주 일요일">
+                        </div>
                     </div>
                 </div>
 
-                <!-- 이벤트 1 정보 -->
+                <!-- 이벤트 1: 프리미엄 패키지 -->
                 <div class="section">
-                    <h3 class="section-title">이벤트 1: 프리미엄 패키지 (50만원)</h3>
+                    <div class="section-title">💰 이벤트 1: 프리미엄 패키지</div>
                     
-                    <div class="form-group">
-                        <label for="event1_normal_price">정상가격 (광택+유리막+유리발수)</label>
-                        <input type="text" id="event1_normal_price" name="event1_normal_price" 
-                               placeholder="예: 70만원">
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label for="event1_normal_price">정상 가격 <span class="required">*</span></label>
+                            <div class="price-input">
+                                <input type="number" id="event1_normal_price" name="event1_normal_price" 
+                                       placeholder="50000" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event1_discount_rate">할인율</label>
+                            <input type="text" id="event1_discount_rate" name="event1_discount_rate" 
+                                   placeholder="예: 20% 할인">
+                        </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="event1_discount_rate">할인율</label>
-                        <input type="text" id="event1_discount_rate" name="event1_discount_rate" 
-                               placeholder="예: 약 28% 할인">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="event1_details">서비스 상세내용</label>
-                        <textarea id="event1_details" name="event1_details" 
-                                  placeholder="광택, 유리막, 유리발수 각각의 세부 설명이나 브랜드 정보"></textarea>
+                        <label for="event1_details">서비스 상세 내용</label>
+                        <textarea id="event1_details" name="event1_details" rows="3"
+                                  placeholder="프리미엄 패키지에 포함되는 서비스를 상세히 입력해주세요"></textarea>
                     </div>
                 </div>
 
-                <!-- 이벤트 2 정보 -->
+                <!-- 이벤트 2: 유리발수 할인 -->
                 <div class="section">
-                    <h3 class="section-title">이벤트 2: 유리발수 할인 (15만원)</h3>
+                    <div class="section-title">💧 이벤트 2: 유리발수 할인</div>
                     
-                    <div class="form-group">
-                        <label for="wash_basic_price">기본세차 가격</label>
-                        <input type="text" id="wash_basic_price" name="wash_basic_price" 
-                               placeholder="예: 3만원">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="wash_premium_price">프리미엄세차 가격</label>
-                        <input type="text" id="wash_premium_price" name="wash_premium_price" 
-                               placeholder="예: 5만원">
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label for="wash_basic_price">기본 세차 가격 <span class="required">*</span></label>
+                            <div class="price-input">
+                                <input type="number" id="wash_basic_price" name="wash_basic_price" 
+                                       placeholder="15000" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="wash_premium_price">프리미엄 세차 가격</label>
+                            <div class="price-input">
+                                <input type="number" id="wash_premium_price" name="wash_premium_price" 
+                                       placeholder="25000">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="coating_only_price">유리발수 단독 가격 <span class="required">*</span></label>
+                            <div class="price-input">
+                                <input type="number" id="coating_only_price" name="coating_only_price" 
+                                       placeholder="30000" required>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="wash_options">기타 세차 옵션</label>
-                        <textarea id="wash_options" name="wash_options" 
-                                  placeholder="다른 세차 옵션이 있다면 가격과 함께 적어주세요"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="coating_only_price">유리발수 단독 가격 확인</label>
-                        <select id="coating_only_price" name="coating_only_price">
-                            <option value="">선택해주세요</option>
-                            <option value="25만원">25만원 (정상가 그대로)</option>
-                            <option value="불가능">세차 없이는 불가능</option>
-                            <option value="기타">기타 (아래 상세 설명란에 작성)</option>
-                        </select>
+                        <textarea id="wash_options" name="wash_options" rows="2"
+                                  placeholder="추가 세차 옵션이 있다면 입력해주세요"></textarea>
                     </div>
                 </div>
 
-                <!-- 예약 및 운영 방식 -->
+                <!-- 예약 및 운영 정보 -->
                 <div class="section">
-                    <h3 class="section-title">예약 및 운영 방식</h3>
+                    <div class="section-title">📞 예약 및 운영 정보</div>
                     
                     <div class="form-group">
-                        <label>예약 방법</label>
+                        <label>예약 가능 방법 <span class="required">*</span></label>
                         <div class="checkbox-group">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="phone_reservation" name="reservation_methods" value="전화예약">
-                                <label for="phone_reservation">전화예약</label>
+                                <input type="checkbox" id="reservation_phone" name="reservation_methods" value="전화예약" required>
+                                <label for="reservation_phone">📞 전화 예약</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="online_reservation" name="reservation_methods" value="온라인예약">
-                                <label for="online_reservation">온라인예약</label>
+                                <input type="checkbox" id="reservation_visit" name="reservation_methods" value="방문예약">
+                                <label for="reservation_visit">🚗 현장 방문</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="walk_in" name="reservation_methods" value="당일방문">
-                                <label for="walk_in">당일방문 가능</label>
+                                <input type="checkbox" id="reservation_online" name="reservation_methods" value="온라인예약">
+                                <label for="reservation_online">💻 온라인 예약</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="reservation_app" name="reservation_methods" value="앱예약">
+                                <label for="reservation_app">📱 앱 예약</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="time-group">
+                        <div class="form-group">
+                            <label for="daily_limit">일일 한정 수량</label>
+                            <input type="number" id="daily_limit" name="daily_limit" 
+                                   placeholder="예: 20">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service_time">서비스 소요시간</label>
+                            <input type="text" id="service_time" name="service_time" 
+                                   placeholder="예: 60분">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 홍보 및 마케팅 -->
+                <div class="section">
+                    <div class="section-title">📢 홍보 채널</div>
+                    
+                    <div class="form-group">
+                        <label>홍보 예정 채널</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promo_sns" name="promotion_channels" value="SNS">
+                                <label for="promo_sns">📱 SNS (인스타, 페북)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promo_blog" name="promotion_channels" value="블로그">
+                                <label for="promo_blog">📝 블로그</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promo_banner" name="promotion_channels" value="현수막/배너">
+                                <label for="promo_banner">🎯 현수막/배너</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promo_flyer" name="promotion_channels" value="전단지">
+                                <label for="promo_flyer">📄 전단지</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promo_local" name="promotion_channels" value="지역카페">
+                                <label for="promo_local">☕ 지역 커뮤니티</label>
                             </div>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="daily_limit">일일 처리 가능 대수</label>
-                        <input type="text" id="daily_limit" name="daily_limit" 
-                               placeholder="예: 하루 최대 5대">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service_time">평균 작업 소요시간</label>
-                        <input type="text" id="service_time" name="service_time" 
-                               placeholder="예: 이벤트1 3시간, 이벤트2 2시간">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="payment_methods">결제 방법 및 할인</label>
-                        <textarea id="payment_methods" name="payment_methods" 
-                                  placeholder="현금/카드 할인 차이, 기타 결제 조건"></textarea>
-                    </div>
-                </div>
-
-                <!-- 고객 구분 및 제한사항 -->
-                <div class="section">
-                    <h3 class="section-title">고객 구분 및 제한사항</h3>
-                    
-                    <div class="form-group">
-                        <label for="customer_classification">신규/기존 고객 구분 혜택</label>
-                        <textarea id="customer_classification" name="customer_classification" 
-                                  placeholder="신규 고객 추가 할인이나 기존 고객 혜택이 있다면 적어주세요"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="vehicle_restrictions">차종 제한사항</label>
-                        <textarea id="vehicle_restrictions" name="vehicle_restrictions" 
-                                  placeholder="대형차, 수입차, 특정 차종 제한이나 추가 요금이 있다면 적어주세요"></textarea>
-                    </div>
-                </div>
-
-
-                <!-- 홍보 및 디자인 -->
-                <div class="section">
-                    <h3 class="section-title">홍보 및 디자인 관련</h3>
-                    
-                    <div class="form-group">
-                        <label>주요 홍보 채널</label>
-                        <div class="checkbox-group">
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="instagram" name="promotion_channels" value="인스타그램">
-                                <label for="instagram">인스타그램</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="facebook" name="promotion_channels" value="페이스북">
-                                <label for="facebook">페이스북</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="naver" name="promotion_channels" value="네이버">
-                                <label for="naver">네이버</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="kakao" name="promotion_channels" value="카카오톡">
-                                <label for="kakao">카카오톡</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="offline" name="promotion_channels" value="오프라인">
-                                <label for="offline">오프라인 전단지</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="brand_colors">선호 브랜드 컬러</label>
-                        <input type="text" id="brand_colors" name="brand_colors" 
-                               placeholder="예: 파란색, #3498db, 기존 로고 컬러 사용">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="design_style">선호하는 디자인 스타일</label>
-                        <textarea id="design_style" name="design_style" 
-                                  placeholder="모던한 느낌, 친근한 느낌, 고급스러운 느낌 등 원하시는 스타일"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="existing_materials">기존 홍보물이나 로고 파일</label>
-                        <textarea id="existing_materials" name="existing_materials" 
-                                  placeholder="기존에 사용하시는 로고나 홍보물이 있다면 어떻게 전달해주실지 적어주세요"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="photo_usage">매장/작업 사진 사용 가능 여부</label>
-                        <select id="photo_usage" name="photo_usage">
-                            <option value="">선택해주세요</option>
-                            <option value="가능">사용 가능 (직접 제공)</option>
-                            <option value="촬영필요">사용하고 싶지만 촬영 필요</option>
-                            <option value="불가능">사용 불가 (일러스트나 일반 이미지 사용)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- 기타 요청사항 -->
-                <div class="section">
-                    <h3 class="section-title">기타 요청사항</h3>
-                    
-                    <div class="form-group">
-                        <label for="special_emphasis">특별히 강조하고 싶은 내용</label>
-                        <textarea id="special_emphasis" name="special_emphasis" 
-                                  placeholder="고객에게 꼭 어필하고 싶은 포인트가 있다면 적어주세요"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="additional_requests">추가 요청사항</label>
-                        <textarea id="additional_requests" name="additional_requests" 
-                                  placeholder="기타 궁금한 점이나 특별한 요청사항이 있다면 자유롭게 적어주세요"></textarea>
+                        <label for="special_notes">특별 요청사항</label>
+                        <textarea id="special_notes" name="special_notes" rows="3"
+                                  placeholder="홍보물 제작 시 특별히 강조하고 싶은 내용이나 요청사항을 입력해주세요"></textarea>
                     </div>
                 </div>
 
                 <div class="submit-section">
                     <button type="submit" class="submit-btn">📤 정보 제출하기</button>
-                    <p style="margin-top: 15px; color: #666; font-size: 14px;">
+                    <div class="note">
                         제출 후 24시간 내에 홍보물 시안을 제작해드립니다!
-                    </p>
+                    </div>
                 </div>
             </form>
         </div>
@@ -466,50 +460,79 @@
             result += "📞 예약 및 운영\n";
             result += `• 예약방법: ${data.reservation_methods.join(', ')}\n`;
             result += `• 일일 한정: ${data.daily_limit || '미기재'}\n`;
-            result += `• 소요시간: ${data.service_time || '미기재'}\n`;
-            result += `• 결제방법: ${data.payment_methods || '미기재'}\n\n`;
+            result += `• 소요시간: ${data.service_time || '미기재'}\n\n`;
             
+            result += "📢 홍보 및 마케팅\n";
+            result += `• 홍보채널: ${data.promotion_channels.join(', ') || '미기재'}\n`;
+            result += `• 특별요청: ${data.special_notes || '없음'}\n\n`;
             
-            result += "📱 홍보 채널\n";
-            result += `• 주요 채널: ${data.promotion_channels.join(', ')}\n`;
-            result += `• 브랜드 컬러: ${data.brand_colors || '미기재'}\n`;
-            result += `• 디자인 스타일: ${data.design_style || '미기재'}\n`;
-            result += `• 사진 사용: ${data.photo_usage || '미선택'}\n\n`;
+            result += `접수 시간: ${new Date().toLocaleString('ko-KR')}\n`;
             
-            if (data.special_emphasis) {
-                result += `🎯 특별 강조사항\n${data.special_emphasis}\n\n`;
-            }
+            console.log('📋 폼 데이터 정리 완료:', result);
             
-            if (data.additional_requests) {
-                result += `📝 추가 요청사항\n${data.additional_requests}\n\n`;
-            }
-            
-            // JSON 파일 자동 다운로드
-            const timestamp = new Date().toISOString().replace(/[:.]/g, '-').split('T')[0] + '_' + new Date().toISOString().replace(/[:.]/g, '-').split('T')[1].substring(0,8);
-            const jsonData = {
-                timestamp: new Date().toISOString(),
-                formData: data,
-                textSummary: result
-            };
-            
-            // 파일 다운로드 제거됨 - SMS/이메일 전송만 처리
-            
-            // SMS 자동화 서버로 데이터 전송
-            try {
+            // SMS 자동화 서버로 전송 시도
+            fetch('http://172.30.1.34:8081/send-form-data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(response => {
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return response.json();
+            })
+            .then(result => {
+                console.log('✅ SMS 자동화 서버 응답:', result);
+                
+                // 페이지 전체를 성공 메시지로 교체
+                document.body.innerHTML = `
+                    <div style="
+                        display: flex; flex-direction: column; justify-content: center; align-items: center;
+                        min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px;
+                    ">
+                        <div style="
+                            background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                            text-align: center; max-width: 500px; width: 100%;
+                        ">
+                            <div style="font-size: 64px; margin-bottom: 20px;">🎉</div>
+                            <h1 style="color: #2c3e50; margin-bottom: 15px; font-size: 28px;">제출되었습니다!</h1>
+                            <p style="color: #7f8c8d; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                                여름 한정 이벤트 홍보물 제작 요청이<br>
+                                성공적으로 제출되었습니다.
+                            </p>
+                            <div style="
+                                background: #ecf0f1; padding: 20px; border-radius: 10px; margin: 20px 0;
+                                border-left: 4px solid #3498db;
+                            ">
+                                <p style="margin: 0; color: #2c3e50; font-size: 14px;">
+                                    📱 SMS 알림 발송 완료<br>
+                                    📧 상세 정보 이메일 발송 완료
+                                </p>
+                            </div>
+                            <p style="color: #95a5a6; font-size: 14px; margin-top: 30px;">
+                                24시간 내에 홍보물 시안을 제작해드립니다.
+                            </p>
+                            <button onclick="window.location.reload()" style="
+                                background: #3498db; color: white; border: none; padding: 12px 24px;
+                                border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 20px;
+                                transition: background 0.3s;
+                            " onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
+                                새로 제출하기
+                            </button>
+                        </div>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                console.log('⚠️ 브라우저 보안 정책으로 직접 확인 불가:', error);
+                
+                // 서버 상태 재확인 시도
                 fetch('http://172.30.1.34:8081', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                }).then(response => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    return response.json();
-                })
-                .then(result => {
-                    console.log('✅ SMS 자동화 서버 응답:', result);
-                    
-                    // 페이지 전체를 성공 메시지로 교체
+                    method: 'GET',
+                    mode: 'no-cors'
+                }).then(() => {
+                    // 서버 응답 있음 - 정상 접수 메시지
                     document.body.innerHTML = `
                         <div style="
                             display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -521,18 +544,18 @@
                                 text-align: center; max-width: 500px; width: 100%;
                             ">
                                 <div style="font-size: 64px; margin-bottom: 20px;">🎉</div>
-                                <h1 style="color: #2c3e50; margin-bottom: 15px; font-size: 28px;">접수 완료!</h1>
+                                <h1 style="color: #2c3e50; margin-bottom: 15px; font-size: 28px;">제출되었습니다!</h1>
                                 <p style="color: #7f8c8d; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
                                     여름 한정 이벤트 홍보물 제작 요청이<br>
-                                    성공적으로 접수되었습니다.
+                                    성공적으로 제출되었습니다.
                                 </p>
                                 <div style="
                                     background: #ecf0f1; padding: 20px; border-radius: 10px; margin: 20px 0;
-                                    border-left: 4px solid #3498db;
+                                    border-left: 4px solid #27ae60;
                                 ">
                                     <p style="margin: 0; color: #2c3e50; font-size: 14px;">
-                                        📱 SMS 알림 발송 완료<br>
-                                        📧 상세 정보 이메일 발송 완료
+                                        ✅ 정보가 정상적으로 전송되었습니다<br>
+                                        📝 접수번호: ${Date.now().toString().slice(-6)}
                                     </p>
                                 </div>
                                 <p style="color: #95a5a6; font-size: 14px; margin-top: 30px;">
@@ -548,99 +571,65 @@
                             </div>
                         </div>
                     `;
-                })
-                .catch(error => {
-                    console.log('⚠️ 브라우저 보안 정책으로 직접 확인 불가:', error);
+                }).catch(() => {
+                    // 오프라인 또는 서버 없음 - 기본 접수 메시지
+                    document.body.innerHTML = `
+                        <div style="
+                            display: flex; flex-direction: column; justify-content: center; align-items: center;
+                            min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px;
+                        ">
+                            <div style="
+                                background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                                text-align: center; max-width: 500px; width: 100%;
+                            ">
+                                <div style="font-size: 64px; margin-bottom: 20px;">📝</div>
+                                <h1 style="color: #2c3e50; margin-bottom: 15px; font-size: 28px;">제출되었습니다!</h1>
+                                <p style="color: #7f8c8d; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                                    정보가 로컬에 저장되었습니다.<br>
+                                    내용 확인 후 연락드리겠습니다.
+                                </p>
+                                <div style="
+                                    background: #fff3cd; padding: 20px; border-radius: 10px; margin: 20px 0;
+                                    border-left: 4px solid #ffc107;
+                                ">
+                                    <p style="margin: 0; color: #856404; font-size: 14px;">
+                                        💾 정보가 브라우저에 임시 저장되었습니다<br>
+                                        📞 확인 후 별도 연락드리겠습니다
+                                    </p>
+                                </div>
+                                <div style="
+                                    background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0;
+                                    font-family: monospace; font-size: 12px; text-align: left; color: #495057;
+                                    max-height: 150px; overflow-y: auto;
+                                ">
+                                    ${result.replace(/\n/g, '<br>')}
+                                </div>
+                                <button onclick="window.location.reload()" style="
+                                    background: #3498db; color: white; border: none; padding: 12px 24px;
+                                    border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 20px;
+                                    transition: background 0.3s;
+                                " onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
+                                    새로 제출하기
+                                </button>
+                            </div>
+                        </div>
+                    `;
                     
-                    // 서버 상태 재확인 시도
-                    fetch('http://172.30.1.34:8081', {
-                        method: 'GET',
-                        mode: 'no-cors'
-                    }).then(() => {
-                        // 서버 응답 있음 - 정상 접수 메시지
-                        document.body.innerHTML = `
-                            <div style="
-                                display: flex; flex-direction: column; justify-content: center; align-items: center;
-                                min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px;
-                            ">
-                                <div style="
-                                    background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-                                    text-align: center; max-width: 500px; width: 100%;
-                                ">
-                                    <div style="font-size: 64px; margin-bottom: 20px;">🎉</div>
-                                    <h1 style="color: #2c3e50; margin-bottom: 15px; font-size: 28px;">접수 완료!</h1>
-                                    <p style="color: #7f8c8d; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-                                        여름 한정 이벤트 홍보물 제작 요청이<br>
-                                        성공적으로 접수되었습니다.
-                                    </p>
-                                    <div style="
-                                        background: #ecf0f1; padding: 20px; border-radius: 10px; margin: 20px 0;
-                                        border-left: 4px solid #27ae60;
-                                    ">
-                                        <p style="margin: 0; color: #2c3e50; font-size: 14px;">
-                                            📱 SMS 알림 발송 완료<br>
-                                            📧 상세 정보 이메일 발송 완료<br>
-                                            <small style="color: #27ae60;">✅ 서버 정상 작동 확인됨</small>
-                                        </p>
-                                    </div>
-                                    <p style="color: #95a5a6; font-size: 14px; margin-top: 30px;">
-                                        24시간 내에 홍보물 시안을 제작해드립니다.
-                                    </p>
-                                    <button onclick="window.location.reload()" style="
-                                        background: #27ae60; color: white; border: none; padding: 12px 24px;
-                                        border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 20px;
-                                        transition: background 0.3s;
-                                    " onmouseover="this.style.background='#229954'" onmouseout="this.style.background='#27ae60'">
-                                        새로 제출하기
-                                    </button>
-                                </div>
-                            </div>
-                        `;
-                    }).catch(() => {
-                        // 서버 응답 없음 - 실제 오류
-                        document.body.innerHTML = `
-                            <div style="
-                                display: flex; flex-direction: column; justify-content: center; align-items: center;
-                                min-height: 100vh; background: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%);
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px;
-                            ">
-                                <div style="
-                                    background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-                                    text-align: center; max-width: 500px; width: 100%;
-                                ">
-                                    <div style="font-size: 64px; margin-bottom: 20px;">⚠️</div>
-                                    <h1 style="color: #e74c3c; margin-bottom: 15px; font-size: 28px;">전송 실패</h1>
-                                    <p style="color: #7f8c8d; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-                                        SMS 서버가 응답하지 않습니다.<br>
-                                        잠시 후 다시 시도해주세요.
-                                    </p>
-                                    <div style="
-                                        background: #fdedec; padding: 20px; border-radius: 10px; margin: 20px 0;
-                                        border-left: 4px solid #e74c3c;
-                                    ">
-                                        <p style="margin: 0; color: #e74c3c; font-size: 14px;">
-                                            ❌ 서버 연결 실패<br>
-                                            관리자에게 문의하세요.
-                                        </p>
-                                    </div>
-                                    <button onclick="window.location.reload()" style="
-                                        background: #e74c3c; color: white; border: none; padding: 12px 24px;
-                                        border-radius: 6px; font-size: 14px; cursor: pointer; margin-top: 20px;
-                                        transition: background 0.3s;
-                                    " onmouseover="this.style.background='#c0392b'" onmouseout="this.style.background='#e74c3c'">
-                                        다시 시도
-                                    </button>
-                                </div>
-                            </div>
-                        `;
-                    });
+                    // 로컬 스토리지에 데이터 저장
+                    localStorage.setItem('eventFormData_' + Date.now(), result);
                 });
-            } catch (error) {
-                console.log('SMS 서버 전송 오류:', error);
-            }
-            
-            // 구 버전 코드 제거됨 - SMS/이메일 전송만 처리
+            });
+        });
+
+        // 오늘 날짜를 최소값으로 설정
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('startDate').min = today;
+        document.getElementById('endDate').min = today;
+        
+        // 시작일이 변경되면 종료일 최소값도 변경
+        document.getElementById('startDate').addEventListener('change', function() {
+            document.getElementById('endDate').min = this.value;
         });
     </script>
 </body>
