@@ -395,7 +395,7 @@
                 <div class="submit-section">
                     <button type="submit" class="submit-btn">📤 정보 제출하기</button>
                     <div class="note">
-                        제출 후 24시간 내에 홍보물 시안을 제작해드립니다!
+                        성공적으로 제출되었습니다!
                     </div>
                 </div>
             </form>
@@ -403,6 +403,33 @@
     </div>
 
     <script>
+        // 백엔드 API 호출 함수
+        async function sendToBackend(formData) {
+            try {
+                console.log('🚀 백엔드 API 호출 중...');
+                
+                const response = await fetch('http://127.0.0.1:5001/webhook/form-submission', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    console.log('✅ 백엔드 알림 발송 성공:', result);
+                } else {
+                    console.error('❌ 백엔드 오류:', result);
+                }
+                
+            } catch (error) {
+                console.error('❌ 백엔드 연결 실패:', error);
+                // 백엔드 연결 실패해도 폼 제출은 계속 진행
+            }
+        }
+
         // 서버 상태 확인 제거 - 항상 폼 표시
 
         document.getElementById('eventForm').addEventListener('submit', function(e) {
@@ -465,6 +492,9 @@
             // 로컬 스토리지에 데이터 저장
             localStorage.setItem('eventFormData_' + Date.now(), result);
             
+            // 백엔드 API 호출로 알림 발송
+            sendToBackend(data);
+            
             // 항상 성공 메시지 표시
             document.body.innerHTML = `
                 <div style="
@@ -492,7 +522,7 @@
                             </p>
                         </div>
                         <p style="color: #95a5a6; font-size: 14px; margin-top: 30px;">
-                            24시간 내에 홍보물 시안을 제작해드립니다.
+                            접수가 완료되었습니다.
                         </p>
                         <button onclick="window.location.reload()" style="
                             background: #3498db; color: white; border: none; padding: 12px 24px;
