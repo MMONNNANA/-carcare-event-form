@@ -496,7 +496,7 @@
             
             // SMS 자동화 서버로 데이터 전송
             try {
-                fetch('http://172.30.1.34:8081', {
+                fetch('https://cors-anywhere.herokuapp.com/http://172.30.1.34:8081', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
